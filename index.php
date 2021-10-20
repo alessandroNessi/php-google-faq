@@ -29,7 +29,6 @@ $faqContainer=[
 //con una ricorsiva aggiungo le classi alla stringa
 function optimizeString($string){
     if($string[0]=='0'){
-        // var_dump($string);
         return "<div class='tab'>".optimizeString(substr($string, 1))."</div>";
     }else{
         return $string;
